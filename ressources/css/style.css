@@ -1,0 +1,247 @@
+@font-face{
+	font-family: 'policeh1';
+	src: url('../fonts/Chunkfive.otf');
+}
+
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    font-family: Helvetica, Arial, Verdana, sans-serif; 
+}
+
+header {
+    background-color: #8F8F8F;
+    margin-bottom: 3%;
+}
+
+header img{
+	display: inline-block;
+	vertical-align: top;
+	width: 12%;
+	margin: 1%;
+}
+
+#container-h1-nav{
+	display: inline-block;
+	width: 80%;
+}
+
+h1, h2{
+	display: block;
+	text-align: center;
+}
+
+h1{
+	font-size: 2.3em;
+	font-family: 'policeh1';
+}
+
+/*----------------------------------*/
+/*-- MISE EN FORME DES MENU       --*/
+/*----------------------------------*/
+nav
+{
+	display: block;
+	text-align: center;
+	}
+nav ul
+{
+	list-style-type: none;
+}
+
+nav a
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 1%;
+    margin-bottom: 7px;
+    padding: 0.5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: #53585C;
+    box-shadow: 4px 4px 5px #423C3C;
+}
+
+nav li:hover
+{
+	color: #000000;
+	background-color: #dbdbdb;
+}
+/*----------------------------------*/
+
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+article {
+    margin-bottom: 5%;
+}
+
+.date {
+    display: inline-block;
+    background-color: #E5E5E5;
+    font-size: 1.2em;
+    font-family: 'policeh1';
+    padding: 1%;
+    text-align: center;
+    width: 15%;
+}
+
+.date-en-ligne {
+    display: none;
+}
+
+.experience {
+    display: inline-block;
+    margin-left: 3%;
+    width: 72%;
+}
+
+.experience p {
+    margin: 3%;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-family: 'policeh1';
+}
+
+.h3-police-std{
+	font-family: Helvetica, Arial, Verdana, sans-serif; 
+}
+
+p {
+	margin: 0px;
+}
+
+footer {
+	font-size: 1.3em;
+	text-align: center;
+    background-color: #8F8F8F;
+    padding: 0.3%;
+}
+
+footer p {
+    margin: 0.3%;
+    font-weight: bold;
+}
+
+#monImg {
+	position: fixed;
+	right: 60px;
+	bottom: 96px;
+	display: none;
+}
+
+/*----------------------------------*/
+/* Fléche retour en haut de page    */
+/*----------------------------------*/
+a#cRetour{
+  border-radius:3px;
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+  color:#fff;
+  background:rgba(0, 0, 0, 0.25);
+  position:fixed;
+  right:20px;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+a#cRetour:before{ content: "\25b2"; }
+
+a#cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+
+a#cRetour.cInvisible{
+  bottom:-35px;
+  opacity:0;
+  transition:all ease-in 0.5s;
+}
+
+a#cRetour.cVisible{
+  bottom:100px;
+  opacity:1;
+}
+/*----------------------------------*/
+
+
+@media screen and (max-width: 980px) {
+	body {
+    	font-size: 0.8em;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	nav a {
+		font-size: 1.1em;
+	}
+
+	.date {
+    	font-size: 1em;
+    }
+    h3, footer {
+    	font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 0.7em;
+    }
+	.date {
+    	font-size: 0.9em;
+    }
+    h3, footer {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header img {
+        display: none;
+    }
+    body {
+        font-size: 0.9em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    nav a {
+        font-size: 1.1em;
+    }
+    .date {
+        display: none;
+    }
+    .date-en-ligne {
+        display: block;
+        font-size: 1em;
+        background-color: #E5E5E5;
+        font-family: 'policeh1';
+        padding: 1%;
+        width: 80%;
+    }
+    h3, footer {
+        font-size: 1em;
+    }
+}
+
+
